@@ -139,7 +139,7 @@ for ChuangmiIRPlatform, you will need to find out the following information
 Check tested camera configuration here: https://github.com/KhaosT/homebridge-camera-ffmpeg/wiki/Tested-Configuration
 
 
-#HomeKit Hub
+### HomeKit Hub
 * Make sure enable iCloud two factor authentication
 * Turn off auto sleep for the HomeKit Hub device
 
