@@ -10,13 +10,13 @@
 ## Quick Start
 TODO
 
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG67.jpg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG68.jpg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG69.jpg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG70.jpg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG71.jpg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG72.jpg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG73.jpg)
+![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG67.jpeg)
+![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG68.jpeg)
+![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG69.jpeg)
+![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG70.jpeg)
+![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG71.jpeg)
+![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG72.jpeg)
+![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG73.jpeg)
 
 ## Installed plugins 
 * homebridge-milight, https://github.com/dotsam/homebridge-milight
