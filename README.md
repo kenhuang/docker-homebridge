@@ -23,15 +23,15 @@ docker run \
 
 ### Step 2
 
-update /homebridge/config.json
+update /homebridge/config.json, [sample-config.json](https://github.com/kenhuang/docker-homebridge/blob/master/sample-config.json)
 
 ### Step 3 
 
-add HomeBridge to iOS home app, check container logs get the QR code then add it as accessory in iOS home app 
+restart container
 
 ### Step 4
 
-update config according to your environment settings then restart container
+add HomeBridge to iOS home app, check container logs get the QR code then add it as accessory in iOS home app 
 
 
 <img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG67.jpeg" height="480" width="270"> <img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG68.jpeg" height="480" width="270">
@@ -122,22 +122,24 @@ curl -X POST -d 'ding=dong&dong=ding' http://HOME_BRIDGE_IP:5005
 ### MI IR Remote
 for ChuangmiIRPlatform, you will need to find out the following information
 
-MIIO_TOKEN
+* MIIO_TOKEN
 
-execute the following command inside the container to find out miio token
-```shell
-docker exec -it homebridge sh
-miio --discover
-```
+    execute the following command inside the container to find out miio token
+    ```shell
+    docker exec -it homebridge sh
+    miio --discover
+    ```
 
-MI_LEARN_COMMAND
+* MI_LEARNED_CODE
 
-trigger MiLean switch on iOS then watch the container log to find out the IR command
+    trigger MiLean switch on iOS then watch the container log to find out the IR command
 
 
 ### Camera
 Check tested camera configuration here: https://github.com/KhaosT/homebridge-camera-ffmpeg/wiki/Tested-Configuration
 
 
-
+#HomeKit Hub
+* Make sure enable iCloud two factor authentication
+* Turn off auto sleep for the HomeKit Hub device
 

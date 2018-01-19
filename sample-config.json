@@ -117,18 +117,18 @@
         "MaxTemperature": 25,
         "data": {
           "Cool":{
-            "25" : "MI_LEARN_COMMAND",
-            "23" : "MI_LEARN_COMMAND",
-            "21" : "MI_LEARN_COMMAND",
-            "18" : "MI_LEARN_COMMAND"
+            "25" : "MI_LEARNED_CODE",
+            "23" : "MI_LEARNED_CODE",
+            "21" : "MI_LEARNED_CODE",
+            "18" : "MI_LEARNED_CODE"
           },
           "Heat":{
-            "25" : "MI_LEARN_COMMAND",
-            "23" : "MI_LEARN_COMMAND",
-            "21" : "MI_LEARN_COMMAND",
-            "18" : "MI_LEARN_COMMAND"
+            "25" : "MI_LEARNED_CODE",
+            "23" : "MI_LEARNED_CODE",
+            "21" : "MI_LEARNED_CODE",
+            "18" : "MI_LEARNED_CODE"
           },
-          "off" : "MI_LEARN_COMMAND"
+          "off" : "MI_LEARNED_CODE"
         }
       },
         {
@@ -141,18 +141,18 @@
           "MaxTemperature": 25,
           "data": {
             "Cool":{
-              "25" : "MI_LEARN_COMMAND",
-              "23" : "MI_LEARN_COMMAND",
-              "21" : "MI_LEARN_COMMAND",
-              "18" : "MI_LEARN_COMMAND"
+              "25" : "MI_LEARNED_CODE",
+              "23" : "MI_LEARNED_CODE",
+              "21" : "MI_LEARNED_CODE",
+              "18" : "MI_LEARNED_CODE"
             },
             "Heat":{
-              "25" : "MI_LEARN_COMMAND",
-              "23" : "MI_LEARN_COMMAND",
-              "21" : "MI_LEARN_COMMAND",
-              "18" : "MI_LEARN_COMMAND"
+              "25" : "MI_LEARNED_CODE",
+              "23" : "MI_LEARNED_CODE",
+              "21" : "MI_LEARNED_CODE",
+              "18" : "MI_LEARNED_CODE"
             },
-            "off" : "MI_LEARN_COMMAND"
+            "off" : "MI_LEARNED_CODE"
           }
         }
       ]
