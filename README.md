@@ -10,13 +10,14 @@
 ## Quick Start
 TODO
 
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG67.jpeg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG68.jpeg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG69.jpeg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG70.jpeg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG71.jpeg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG72.jpeg)
-![](https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG73.jpeg)
+
+<img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG67.jpeg" height="480" width="270"> <img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG68.jpeg" height="480" width="270">
+
+<img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG69.jpeg" height="480" width="270"> <img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG72.jpeg" height="480" width="270">
+
+<img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG70.jpeg" height="384" width="512">
+<img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG71.jpeg" height="384" width="512">
+<img src="https://raw.githubusercontent.com/kenhuang/docker-homebridge/master/images/IMG73.jpeg" height="384" width="512">
 
 ## Installed plugins 
 * homebridge-milight, https://github.com/dotsam/homebridge-milight
@@ -44,7 +45,7 @@ docker run \
   -e PUID=<UID> -e PGID=<GID> \
   -e TZ=<timezone> \
   -v </path/to/config>:/homebridge \
-  kenhuang/homebridge
+  kenhuang/docker-homebridge
 
 Example:  
 docker run \
@@ -53,7 +54,7 @@ docker run \
   -e PUID=1000 -e PGID=1000 \
   -e TZ=Pacific/Auckland \
   -v /homebridge:/homebridge \
-  kenhuang/homebridge  
+  kenhuang/docker-homebridge
 ```
 
 ### check homebridge container logs
