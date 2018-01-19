@@ -5,6 +5,7 @@
 * Able to use Alexa control all the HomeKit supported lights
 * Able to control IR device like Air conditioner, TV etc
 * Able to control wifi enable RGB LED lights (MiLight)
+* Able to review IP camera within iOS home app
 * Able to trigger video door bell from iOS home app
 * Able to control WeMo switch/motion sensor
 
