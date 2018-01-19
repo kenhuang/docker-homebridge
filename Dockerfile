@@ -4,6 +4,9 @@ FROM oznu/homebridge:latest
 #https://github.com/dotsam/homebridge-milight
 RUN yarn add homebridge-milight
 
+# yarn add homebridge-platform-wemo
+RUN yarn add homebridge-platform-wemo
+
 # mi-ir-remote setup
 #https://github.com/Zzm317/homebridge-mi-ir-remote
 RUN yarn add homebridge-mi-ir-remote
