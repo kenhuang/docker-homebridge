@@ -27,3 +27,6 @@ RUN yarn add homebridge-videodoorbell
 # Alexa version of homebridge
 # https://github.com/oznu/docker-homebridge/issues/30
 RUN yarn global add https://github.com/NorthernMan54/homebridge
+
+COPY /homebridge/node_modules /defaults/
+COPY defaults/startup.sh /defaults/startup.sh
