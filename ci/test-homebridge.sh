@@ -6,7 +6,7 @@ teardown() {
 
 launch() {
   docker run --name homebridge -d -p 51826:51826 -e TERMINATE_ON_ERROR=1 homebridge
-  sleep 20
+  sleep 45
 }
 
 testCmd() {
@@ -49,14 +49,14 @@ testCmd() {
 
 @test "test extra packages are installed" {
   docker run --name homebridge -d -e "PACKAGES=ffmpeg,openssh" homebridge
-  sleep 30
+  sleep 35
   run docker exec homebridge ffmpeg -h
   [ "$status" -eq 0 ]
 }
 
 @test "test homebridge-config-ui-x is running if option is enabled" {
   docker run --name homebridge -d -p 51826:51826 -p 8581:8581 -e HOMEBRIDGE_CONFIG_UI=1 -e HOMEBRIDGE_CONFIG_UI_PORT=8581 homebridge
-  sleep 20
+  sleep 60
   run testCmd \
     && curl -If http://localhost:8581/favicon.ico \
     && docker exec homebridge pidof homebridge-config-ui-x
