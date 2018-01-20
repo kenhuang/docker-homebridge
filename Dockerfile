@@ -11,7 +11,7 @@ RUN yarn add homebridge-platform-wemo
 
 # mi-ir-remote setup
 #https://github.com/Zzm317/homebridge-mi-ir-remote
-RUN yarn add homebridge-mi-ir-remote
+RUN yarn add miio homebridge-mi-ir-remote
 RUN yarn global add miio
 
 # homebridge-camera-ffmpeg setup
