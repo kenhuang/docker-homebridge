@@ -1,6 +1,6 @@
 FROM oznu/homebridge:latest
 
-RUN cd /defaults
+WORKDIR /defaults
 
 # milight setup
 #https://github.com/dotsam/homebridge-milight
@@ -31,3 +31,5 @@ RUN yarn add homebridge-videodoorbell
 RUN yarn global add https://github.com/NorthernMan54/homebridge
 
 COPY defaults/startup.sh /defaults/startup.sh
+
+WORKDIR /homebridge
