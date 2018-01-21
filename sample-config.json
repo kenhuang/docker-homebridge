@@ -6,13 +6,26 @@
     "pin": "031-45-154",
     "ssdp": 1900
   },
-
   "description": "This is an example configuration file. You can use this as a template for creating your own configuration file containing devices you actually own.",
-
   "accessories": [
   ],
-
   "platforms": [
+    {
+      "platform": "MiOutletPlatform",
+      "deviceCfgs": [
+        {
+          "type": "MiPlugBase",
+          "ip": "MI_PLUG_IP",
+          "token": "MIIO_TOKEN",
+          "outletName": "Mi Switch 1",
+          "outletDisable": false,
+          "temperatureName": "Mi Switch 1 temperature",
+          "temperatureDisable": false,
+          "switchLEDName": "Mi Switch 1 led light switch",
+          "switchLEDDisable": false
+        }
+      ]
+    },
     {
       "platform": "Video-doorbell",
       "cameras": [
@@ -31,21 +44,28 @@
       ]
     },
     {
-      "platform" : "yeelight",
-      "name" : "yeelight"
+      "platform": "yeelight",
+      "name": "yeelight"
     },
     {
       "platform": "BelkinWeMo",
       "name": "WeMo Platform"
     },
     {
-      "platform":"MiLight",
-      "name":"MiLight",
+      "platform": "MiLight",
+      "name": "MiLight",
       "bridges": [
         {
           "ip_address": "MILIGHT_HUB_IP",
           "version": "v3",
-          "lights": {"rgbw": ["Lamp", "Kitchen", "LivingRoom", "Hallway"]},
+          "lights": {
+            "rgbw": [
+              "Lamp",
+              "Kitchen",
+              "LivingRoom",
+              "Hallway"
+            ]
+          },
           "repeat": 1,
           "delay": 100
         }
@@ -56,46 +76,46 @@
       "cameras": [
         {
           "name": "942L Camera",
-          "videoConfig":{
-            "source":"-rtsp_transport tcp -re -i rtsp://CAMERA_IP/play1.sdp",
-            "stillImageSource":"-f mjpeg -i http://USERNAME:ADMIN@CAMERA_IP/video/mjpg.cgi",
-            "maxStreams":2,
-            "maxWidth":640,
-            "maxHeight":480,
-            "maxFPS":30
+          "videoConfig": {
+            "source": "-rtsp_transport tcp -re -i rtsp://CAMERA_IP/play1.sdp",
+            "stillImageSource": "-f mjpeg -i http://USERNAME:ADMIN@CAMERA_IP/video/mjpg.cgi",
+            "maxStreams": 2,
+            "maxWidth": 640,
+            "maxHeight": 480,
+            "maxFPS": 30
           }
         },
         {
           "name": "700L Camera",
-          "videoConfig":{
-            "source":"-re -f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi -i http://USERNAME:PASSWORD@CAMERA_IP/audio.cgi",
-            "stillImageSource":"-f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi",
-            "maxStreams":2,
-            "maxWidth":640,
-            "maxHeight":480,
-            "maxFPS":30
+          "videoConfig": {
+            "source": "-re -f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi -i http://USERNAME:PASSWORD@CAMERA_IP/audio.cgi",
+            "stillImageSource": "-f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi",
+            "maxStreams": 2,
+            "maxWidth": 640,
+            "maxHeight": 480,
+            "maxFPS": 30
           }
         },
         {
           "name": "932L Camera",
-          "videoConfig":{
-            "source":"-re -f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi -i http://USERNAME:PASSWORD@CAMERA_IP/audio.cgi",
-            "stillImageSource":"-f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi",
-            "maxStreams":2,
-            "maxWidth":640,
-            "maxHeight":480,
-            "maxFPS":30
+          "videoConfig": {
+            "source": "-re -f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi -i http://USERNAME:PASSWORD@CAMERA_IP/audio.cgi",
+            "stillImageSource": "-f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi",
+            "maxStreams": 2,
+            "maxWidth": 640,
+            "maxHeight": 480,
+            "maxFPS": 30
           }
         },
         {
           "name": "5020L Camera",
-          "videoConfig":{
-            "source":"-re -f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi -i http://USERNAME:PASSWORD@CAMERA_IP/audio.cgi",
-            "stillImageSource":"-f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi",
-            "maxStreams":2,
-            "maxWidth":640,
-            "maxHeight":480,
-            "maxFPS":30
+          "videoConfig": {
+            "source": "-re -f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi -i http://USERNAME:PASSWORD@CAMERA_IP/audio.cgi",
+            "stillImageSource": "-f mjpeg -i http://USERNAME:PASSWORD@CAMERA_IP/video/mjpg.cgi",
+            "maxStreams": 2,
+            "maxWidth": 640,
+            "maxHeight": 480,
+            "maxFPS": 30
           }
         }
       ]
@@ -103,34 +123,35 @@
     {
       "platform": "ChuangmiIRPlatform",
       "hidelearn": false,
-      "learnconfig":{
+      "learnconfig": {
         "ip": "MI_IR_REMOTE_IP",
         "token": "MIIO_TOKEN"
       },
-      "deviceCfgs": [{
-        "type": "AirConditioner",
-        "ip": "MI_IR_REMOTE_IP",
-        "token": "MIIO_TOKEN",
-        "Name": "Office Aircon",
-        "DefaultTemperature": 21,
-        "MinTemperature": 18,
-        "MaxTemperature": 25,
-        "data": {
-          "Cool":{
-            "25" : "MI_LEARNED_CODE",
-            "23" : "MI_LEARNED_CODE",
-            "21" : "MI_LEARNED_CODE",
-            "18" : "MI_LEARNED_CODE"
-          },
-          "Heat":{
-            "25" : "MI_LEARNED_CODE",
-            "23" : "MI_LEARNED_CODE",
-            "21" : "MI_LEARNED_CODE",
-            "18" : "MI_LEARNED_CODE"
-          },
-          "off" : "MI_LEARNED_CODE"
-        }
-      },
+      "deviceCfgs": [
+        {
+          "type": "AirConditioner",
+          "ip": "MI_IR_REMOTE_IP",
+          "token": "MIIO_TOKEN",
+          "Name": "Office Aircon",
+          "DefaultTemperature": 21,
+          "MinTemperature": 18,
+          "MaxTemperature": 25,
+          "data": {
+            "Cool": {
+              "25": "MI_LEARNED_CODE",
+              "23": "MI_LEARNED_CODE",
+              "21": "MI_LEARNED_CODE",
+              "18": "MI_LEARNED_CODE"
+            },
+            "Heat": {
+              "25": "MI_LEARNED_CODE",
+              "23": "MI_LEARNED_CODE",
+              "21": "MI_LEARNED_CODE",
+              "18": "MI_LEARNED_CODE"
+            },
+            "off": "MI_LEARNED_CODE"
+          }
+        },
         {
           "type": "AirConditioner",
           "ip": "OTHER_MI_IR_REMOTE_IP",
@@ -140,24 +161,36 @@
           "MinTemperature": 18,
           "MaxTemperature": 25,
           "data": {
-            "Cool":{
-              "25" : "MI_LEARNED_CODE",
-              "23" : "MI_LEARNED_CODE",
-              "21" : "MI_LEARNED_CODE",
-              "18" : "MI_LEARNED_CODE"
+            "Cool": {
+              "25": "MI_LEARNED_CODE",
+              "23": "MI_LEARNED_CODE",
+              "21": "MI_LEARNED_CODE",
+              "18": "MI_LEARNED_CODE"
             },
-            "Heat":{
-              "25" : "MI_LEARNED_CODE",
-              "23" : "MI_LEARNED_CODE",
-              "21" : "MI_LEARNED_CODE",
-              "18" : "MI_LEARNED_CODE"
+            "Heat": {
+              "25": "MI_LEARNED_CODE",
+              "23": "MI_LEARNED_CODE",
+              "21": "MI_LEARNED_CODE",
+              "18": "MI_LEARNED_CODE"
             },
-            "off" : "MI_LEARNED_CODE"
+            "off": "MI_LEARNED_CODE"
+          }
+        },
+        {
+          "type": "Light",
+          "ip": "OTHER_MI_IR_REMOTE_IP",
+          "token": "MIIO_TOKEN",
+          "Name": "LivingRoom TV",
+          "data": {
+            "100": "MI_LEARNED_CODE",
+            "75": "MI_LEARNED_CODE",
+            "50": "MI_LEARNED_CODE",
+            "25": "MI_LEARNED_CODE",
+            "off": "MI_LEARNED_CODE"
           }
         }
       ]
     }
-
   ]
 }
 

@@ -46,6 +46,7 @@ add HomeBridge to iOS home app, check container logs get the QR code then add it
 ## Included plugins 
 * homebridge-milight, https://github.com/dotsam/homebridge-milight
 * homebridge-mi-ir-remote, https://github.com/Zzm317/homebridge-mi-ir-remote
+* homebridge-mi-outlet, https://github.com/YinHangCode/homebridge-mi-outlet
 * homebridge-camera-ffmpeg, https://github.com/KhaosT/homebridge-camera-ffmpeg
 * homebridge-videodoorbell, https://github.com/Samfox2/homebridge-videodoorbell
 * homebridge-platform-wemo, https://github.com/rudders/homebridge-platform-wemo

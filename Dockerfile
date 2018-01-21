@@ -14,6 +14,9 @@ RUN yarn add homebridge-platform-wemo
 RUN yarn add miio homebridge-mi-ir-remote
 RUN yarn global add miio
 
+# https://github.com/YinHangCode/homebridge-mi-outlet
+RUN yarn add homebridge-mi-outlet
+
 # homebridge-camera-ffmpeg setup
 #https://github.com/KhaosT/homebridge-camera-ffmpeg
 RUN apk add --no-cache ffmpeg
