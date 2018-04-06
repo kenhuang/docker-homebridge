@@ -1,4 +1,5 @@
 [![GitHub release](https://img.shields.io/github/release/kenhuang/docker-homebridge.svg)](https://github.com/kenhuang/docker-homebridge/releases) [![Docker Build Status](https://img.shields.io/docker/build/kenhuang/docker-homebridge.svg?label=x64%20build)](https://hub.docker.com/r/kenhuang/docker-homebridge/) [![Travis](https://img.shields.io/travis/kenhuang/docker-homebridge.svg?label=arm%20build)](https://travis-ci.org/kenhuang/docker-homebridge) [![Docker Pulls](https://img.shields.io/docker/pulls/kenhuang/docker-homebridge.svg)](https://hub.docker.com/r/kenhuang/docker-homebridge/)
+[![Slack Status](https://slackin-dzctdlbuwg.now.sh/badge.svg)](https://slackin-dzctdlbuwg.now.sh/)
 
 # Docker Homebridge 
 

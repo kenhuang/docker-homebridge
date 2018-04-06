@@ -19,7 +19,7 @@ RUN yarn add homebridge-mi-outlet
 
 # homebridge-camera-ffmpeg setup
 #https://github.com/KhaosT/homebridge-camera-ffmpeg
-RUN apk add --no-cache ffmpeg
+#RUN apk add --no-cache ffmpeg
 RUN yarn add homebridge-camera-ffmpeg
 
 # homebridge-yeelight setup (not working yet)
