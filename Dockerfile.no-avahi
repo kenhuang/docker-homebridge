@@ -1,4 +1,4 @@
-FROM oznu/homebridge:debian
+FROM oznu/homebridge:no-avahi
 
 WORKDIR /defaults
 
