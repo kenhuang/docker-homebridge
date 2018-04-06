@@ -1,15 +1,114 @@
 {
   "bridge": {
     "name": "Ken's HomeKit",
-    "username": "CC:22:3D:E3:CE:30",
+    "username": "XX:XX:XX:XX:XX:XX",
     "port": 51826,
-    "pin": "031-45-154",
+    "pin": "XXX-XX-XXX",
     "ssdp": 1900
   },
   "description": "This is an example configuration file. You can use this as a template for creating your own configuration file containing devices you actually own.",
-  "accessories": [
-  ],
+  "accessories": [],
   "platforms": [
+    {
+      "platform": "MiAqaraPlatform",
+      "gateways": {
+        "7811dcb8d727": "MI_GATEWAY_PASSWORD"
+      },
+      "defaultValue": {
+        "Global": {
+          "disableNoResponse": true
+        },
+        "7811dcb8d727": {
+          "Gateway_Lightbulb": {
+            "name": "gateway light"
+          },
+          "Gateway_LightSensor": {
+            "name": "gateway light sensor"
+          },
+          "Gateway_Switch_JoinPermission": {
+            "name": "gateway join permission switch",
+            "disable": true
+          }
+        },
+        "158d0000d8badf": {
+          "ContactSensor_ContactSensor": {
+            "name": "大门"
+          }
+        },
+        "158d0000efe730": {
+          "ContactSensor_ContactSensor": {
+            "name": "车库门"
+          }
+        },
+        "158d0001c14e1a": {
+          "TemperatureAndHumiditySensor_TemperatureSensor": {
+            "name": "温度1v1"
+          },
+          "TemperatureAndHumiditySensor_HumiditySensor": {
+            "name": "湿度1v1"
+          }
+        },
+        "158d000201c7aa": {
+          "TemperatureAndHumiditySensor_TemperatureSensor": {
+            "name": "温度2v1"
+          },
+          "TemperatureAndHumiditySensor_HumiditySensor": {
+            "name": "湿度2v1"
+          }
+        },
+        "158d0002271ca1": {
+          "TemperatureAndHumiditySensor2_TemperatureSensor": {
+            "name": "温度1"
+          },
+          "TemperatureAndHumiditySensor2_HumiditySensor": {
+            "name": "湿度1"
+          }
+        },
+        "158d00022739bd": {
+          "TemperatureAndHumiditySensor2_TemperatureSensor": {
+            "name": "温度2"
+          },
+          "TemperatureAndHumiditySensor2_HumiditySensor": {
+            "name": "湿度2"
+          }
+        },
+        "158d000212f6c3": {
+          "WaterDetector_LeakSensor": {
+            "name": "水淹1"
+          }
+        },
+        "158d000214f504": {
+          "WaterDetector_LeakSensor": {
+            "name": "水淹2"
+          }
+        },
+        "158d0000f24040": {
+          "MotionSensor_MotionSensor": {
+            "name": "人体传感1"
+          }
+        },
+        "158d0000d78fb6": {
+          "MotionSensor_MotionSensor": {
+            "name": "人体传感2"
+          }
+        },
+        "158d0000e5adfa": {
+          "Global": {
+            "disable": true
+          },
+          "Button_StatelessProgrammableSwitch": {
+            "name": "Button1",
+            "disable": false
+          },
+          "Button_Switch_VirtualSinglePress": {
+            "name": "Button1SinglePress"
+          },
+          "Button_Switch_VirtualDoublePress": {
+            "name": "Button1DoublePress"
+          }
+        }
+      }
+    },
     {
       "platform": "MiOutletPlatform",
       "deviceCfgs": [
@@ -193,4 +292,3 @@
     }
   ]
 }
-

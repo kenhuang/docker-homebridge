@@ -1,4 +1,4 @@
-FROM oznu/homebridge:latest
+FROM oznu/homebridge:raspberry-pi
 
 WORKDIR /defaults
 

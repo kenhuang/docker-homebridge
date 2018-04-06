@@ -16,10 +16,26 @@
 docker run \
   --net=host \
   --name=homebridge \
+  -e HOMEBRIDGE_DEBUG=1 \
+  -e HOMEBRIDGE_CONFIG_UI=1 \
+  -e HOMEBRIDGE_CONFIG_UI_PORT=8888 \
   -e PUID=1000 -e PGID=1000 \
   -e TZ=Pacific/Auckland \
+  -e PACKAGES=ffmpeg,openssh \
   -v /homebridge:/homebridge \
-  kenhuang/docker-homebridge
+  kenhuang/docker-homebridge:latest
+  
+docker run \
+  --net=host \
+  --name=homebridge \
+  -e HOMEBRIDGE_DEBUG=1 \
+  -e HOMEBRIDGE_CONFIG_UI=1 \
+  -e HOMEBRIDGE_CONFIG_UI_PORT=8888 \
+  -e PUID=1000 -e PGID=1000 \
+  -e TZ=Pacific/Auckland \
+  -e PACKAGES=ffmpeg,openssh \
+  -v /homebridge:/homebridge \
+  kenhuang/docker-homebridge:raspberry-pi  
 ```
 
 ### Step 2
