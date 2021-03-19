@@ -4,38 +4,38 @@ WORKDIR /defaults
 
 # milight setup
 #https://github.com/dotsam/homebridge-milight
-RUN yarn add homebridge-milight
+RUN npm install homebridge-milight
 
-# yarn add homebridge-platform-wemo
-RUN yarn add homebridge-platform-wemo
+# npm install homebridge-platform-wemo
+RUN npm install homebridge-platform-wemo
 
 # mi-ir-remote setup
 #https://github.com/Zzm317/homebridge-mi-ir-remote
-RUN yarn add miio homebridge-mi-ir-remote
-RUN yarn global add miio
+RUN npm install miio homebridge-mi-ir-remote
+RUN npm install miio --global
 
 # https://github.com/YinHangCode/homebridge-mi-outlet
-RUN yarn add homebridge-mi-outlet
+RUN npm install homebridge-mi-outlet
 
 # homebridge-camera-ffmpeg setup
 #https://github.com/KhaosT/homebridge-camera-ffmpeg
 RUN apk add --no-cache ffmpeg
-RUN yarn add homebridge-camera-ffmpeg
+RUN npm install homebridge-camera-ffmpeg
 
 # homebridge-yeelight setup (not working yet)
-RUN yarn add homebridge-yeelight
+RUN npm install homebridge-yeelight
 
 # homebridge-videodoorbell setup
 #https://github.com/Samfox2/homebridge-videodoorbell
-RUN yarn add homebridge-videodoorbell
+RUN npm install homebridge-videodoorbell
 
 # Alexa version of homebridge
 # https://github.com/oznu/docker-homebridge/issues/30
-RUN yarn global add https://github.com/NorthernMan54/homebridge
+RUN npm install https://github.com/NorthernMan54/homebridge --global
 
 # homebridge-mi-aqara setup
 #https://github.com/YinHangCode/homebridge-mi-aqara
-RUN yarn add homebridge-mi-aqara
+RUN npm install homebridge-mi-aqara
 
 COPY defaults/startup.sh /defaults/startup.sh
 
